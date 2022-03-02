@@ -10,7 +10,7 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 
 if (!empty($_POST)) {
 
-    $conn = new mysqli("servername", "username", "password", "database_name"); /* DO: replace arguments with appropriate details */
+    $conn = new mysqli("ih226.brighton.domains", "ih226_db_user", "j?fRdiZ#tJNk", "ih226_ci536");
 
     if ($conn->connect_error) {
         die("connection failed: " . $conn->connect_error);
