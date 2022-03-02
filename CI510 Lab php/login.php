@@ -3,7 +3,7 @@
 session_start();
 
 if (!empty($_POST)) {
-    $conn = new mysqli("servername", "username", "password", "database_name"); /* DO: replace arguments with appropriate details */
+    $conn = new mysqli("ih226.brighton.domains", "ih226_db_user", "j?fRdiZ#tJNk", "ih226_ci536");
     if ($conn->connect_error) {
         die("connection failed: " . $conn->connect_error);
     }
@@ -17,7 +17,7 @@ if (!empty($_POST)) {
         if (password_verify($_POST['password'], $hash)) {
             $_SESSION["status"] = "loggedin";
             $_SESSION["username"] = $_POST['username'];
-            header("Location: http://ih226.brighton.domains/confidential_info.php"); /* DO: replace "confidential_info.php" url with your own */
+            header("Location: http://ih226.brighton.domains/confidential_info.php");
             exit();
         }
 

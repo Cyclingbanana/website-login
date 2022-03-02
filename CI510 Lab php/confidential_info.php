@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION["status"])) {
-    header("Location:http://ih226.brighton.domains/login.php"); /* DO: replace "login.php" url with your own */
+    header("Location: http://ih226.brighton.domains/login.php");
     exit();
 }
 
